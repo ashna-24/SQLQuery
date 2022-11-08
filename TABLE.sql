@@ -47,7 +47,7 @@ select salary from employees;
 
 select distinct job_name from employees;
 
-select emp_name, format((salary*1.15),'C') as "salary" from employees;
+select emp_name, format((salary*1.15),'C','en-US') as "salary" from employees;
 
 select emp_name+'    '+job_name as "Employee & job" from employees;
 
@@ -61,7 +61,7 @@ select * from employees where dep_id not in('2001');
 
 select * from employees where hire_date<'1991';
 
-select avg(salary) as "avg" from employees where (job_name='ANALYST');
+select avg(salary) as "avg" from employees where (job_name='ANALYST'); 
 
 select * from employees where (emp_name='BLAZE');
 
